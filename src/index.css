@@ -888,6 +888,11 @@
   .topbar-brand-title { font-size: 6px; letter-spacing: .25px; }
   .topbar-heading h1 { max-width: none; font-size: 14px; }
 }
+
+@media (min-width: 1024px) {
+  .menu-toggle,
+  .sidebar-close { display: none !important; }
+}
 :root[data-theme="dark"] .app-shell [class*="bg-[#f"],:root[data-theme="dark"] .app-shell [class*="bg-[#e"],:root[data-theme="dark"] .app-shell [class*="bg-[#d"] { background-color:#1a243a !important; }
 :root[data-theme="dark"] .app-shell [class*="text-[#"] { color:#c4cde0 !important; }
 :root[data-theme="dark"] .app-shell [class*="border-[#"] { border-color:#2b3650 !important; }
