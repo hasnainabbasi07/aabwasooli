@@ -862,6 +862,32 @@
 :root[data-theme="dark"] .workspace > footer { color:#9ca9c3; border-color:#28334d; background:#101729; }
 :root[data-theme="dark"] .app-shell section[class*="bg-gradient-to-br"] { border-color:#2b3650 !important; background-image:linear-gradient(145deg,#151d31 0%,#121a2c 70%,#171e34 100%) !important; color:#e4e9f6; }
 :root[data-theme="dark"] .app-shell [class*="bg-white"] { background-color:#151d31 !important; color:#e4e9f6; }
+
+/* Keep the app brand and current page title on separate, unwrapped lines. */
+.topbar-heading { flex: 0 1 auto; min-width: 0; }
+.topbar-heading > div { min-width: max-content; }
+.topbar-brand-title { display: block; white-space: nowrap; font-size: 8px; letter-spacing: .75px; }
+.topbar-heading h1 { white-space: nowrap; }
+.topbar-tools { flex: 1 1 auto; min-width: 0; justify-content: flex-end; }
+.global-search { flex: 0 1 220px; min-width: 120px; }
+
+@media (max-width: 767px) {
+  .topbar { gap: 10px; }
+  .topbar-heading { flex-shrink: 0; }
+  .topbar-heading > div { min-width: max-content; }
+  .topbar-tools { flex: 0 1 auto; }
+}
+
+@media (max-width: 639px) {
+  .topbar-brand-title { font-size: 7px; letter-spacing: .45px; }
+  .topbar-heading h1 { max-width: none; font-size: 16px; }
+  .topbar-tools { flex-shrink: 0; }
+}
+
+@media (max-width: 380px) {
+  .topbar-brand-title { font-size: 6px; letter-spacing: .25px; }
+  .topbar-heading h1 { max-width: none; font-size: 14px; }
+}
 :root[data-theme="dark"] .app-shell [class*="bg-[#f"],:root[data-theme="dark"] .app-shell [class*="bg-[#e"],:root[data-theme="dark"] .app-shell [class*="bg-[#d"] { background-color:#1a243a !important; }
 :root[data-theme="dark"] .app-shell [class*="text-[#"] { color:#c4cde0 !important; }
 :root[data-theme="dark"] .app-shell [class*="border-[#"] { border-color:#2b3650 !important; }

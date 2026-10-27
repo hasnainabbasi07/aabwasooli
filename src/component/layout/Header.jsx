@@ -24,7 +24,7 @@ export default function Header({ title, onMenuClick, children }) {
   const signOut = () => { closeProfile(); navigate("/", { replace: true }); };
 
   return <header className="topbar">
-    <div className="topbar-heading"><button type="button" onClick={onMenuClick} aria-label="Open menu" className="menu-toggle lg:hidden"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 6h16M4 12h16M4 18h16" /></svg></button><div><span className="eyebrow">WATER DELIVERY MANAGEMENT</span><h1>{title}</h1></div></div>
+    <div className="topbar-heading"><button type="button" onClick={onMenuClick} aria-label="Open menu" className="menu-toggle lg:hidden"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M4 6h16M4 12h16M4 18h16" /></svg></button><div><span className="eyebrow topbar-brand-title">WATER DELIVERY MANAGEMENT SYSTEM</span><h1>{title}</h1></div></div>
     <div className="topbar-tools">
       <label className="global-search"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input type="search" placeholder="Search anything..." aria-label="Search"/><kbd>⌘ K</kbd></label>
       <Link to="/counter-sale" className="quick-action">+ <span>New sale</span></Link>
