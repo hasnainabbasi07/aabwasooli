@@ -893,6 +893,31 @@
   .menu-toggle,
   .sidebar-close { display: none !important; }
 }
+
+.topbar {
+  background: linear-gradient(110deg, rgba(47, 146, 254, .16) 0%, #ffffff 52%, rgba(47, 146, 254, .10) 100%) !important;
+  border-color: #e3e9f5;
+  box-shadow: 0 5px 18px rgba(41, 70, 137, .06);
+}
+.topbar .topbar-heading h1 { color: #1d2c50; }
+:root[data-theme="dark"] .topbar .topbar-heading h1 { color: #1d2c50; }
+.topbar .eyebrow { color: #90a0ae; }
+.topbar .profile-button { color: #334b60; }
+:root[data-theme="dark"] .topbar .profile-button { color: #334b60; }
+.topbar .profile-meta small,
+.topbar .profile-chevron { color: #91a0ac; }
+.topbar .quick-action {
+  color: #fff;
+  background: linear-gradient(115deg, #416efe 0%, #2f92fe 52%, #4763fe 100%);
+  box-shadow: 0 4px 10px rgba(65, 110, 254, .18);
+}
+.topbar { min-height: 68px; padding-top: 9px; padding-bottom: 9px; }
+@media (max-width: 1023px) {
+  .topbar { min-height: 64px; padding-top: 8px; padding-bottom: 8px; }
+}
+@media (max-width: 639px) {
+  .topbar { min-height: 58px; padding-top: 7px; padding-bottom: 7px; }
+}
 :root[data-theme="dark"] .app-shell [class*="bg-[#f"],:root[data-theme="dark"] .app-shell [class*="bg-[#e"],:root[data-theme="dark"] .app-shell [class*="bg-[#d"] { background-color:#1a243a !important; }
 :root[data-theme="dark"] .app-shell [class*="text-[#"] { color:#c4cde0 !important; }
 :root[data-theme="dark"] .app-shell [class*="border-[#"] { border-color:#2b3650 !important; }
