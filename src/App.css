@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Global design tokens – single source of truth for the whole app.
+   Each token auto-generates utilities, e.g. bg-primary, text-ink, font-sans,
+   text-title, rounded-pill, shadow-primary, from-primary, to-primary-end */
+@theme {
+  /* Colors */
+  --color-primary: #2f93ff;
+  --color-primary-end: #4a5cff;
+  --color-link: #4a63e8;
+  --color-ink: #444444;
+  --color-muted: #555555;
+  --color-soft: #f5f8ff;
+  --color-page: #f1f6ff; /* app background behind cards */
+  --color-navy: #071437; /* page titles */
+  --color-menu: #78829d; /* sidebar text */
+  --color-card: #fafafa; /* chart/table cards ka background */
+  --color-line: #e4e6ef; /* borders aur chart grid lines */
+  --color-success: #50cd89; /* revenue chart ka green */
+  /* Typography */
+  --font-sans: Arial, Helvetica, sans-serif;
+  --text-title: 28px;
+  --text-heading: 18px;
+  --text-copy: 13px;
+  --text-small: 11px;
+  --text-tiny: 10px;
+
+  /* Shape & effects */
+  --radius-pill: 999px;
+  --shadow-primary: 0 6px 14px rgba(74, 92, 255, 0.3);
+}
+
+@layer base {
+  body {
+    @apply bg-white font-sans text-copy text-ink;
+  }
+}

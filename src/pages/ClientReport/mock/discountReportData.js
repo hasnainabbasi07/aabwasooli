@@ -1,0 +1,92 @@
+// date = the date the report filters on and shows in the Month/Year column.
+export const discountRecords = [
+  {
+    id: 1,
+    clientId: 7350,
+    name: "Test2",
+    amount: 300,
+    date: "2026-09-25",
+    discount: 0,
+  },
+  {
+    id: 2,
+    clientId: 7350,
+    name: "Test2",
+    amount: 20,
+    date: "2026-09-25",
+    discount: 0,
+  },
+  {
+    id: 3,
+    clientId: 7350,
+    name: "Test2",
+    amount: 50,
+    date: "2026-09-25",
+    discount: 0,
+  },
+  {
+    id: 4,
+    clientId: 7350,
+    name: "Test2",
+    amount: 30,
+    date: "2026-09-25",
+    discount: 0,
+  },
+  {
+    id: 5,
+    clientId: 7350,
+    name: "Test2",
+    amount: 20,
+    date: "2026-09-25",
+    discount: 0,
+  },
+  {
+    id: 6,
+    clientId: 7350,
+    name: "Test2",
+    amount: 20,
+    date: "2026-10-05",
+    discount: 1,
+  },
+  {
+    id: 7,
+    clientId: 7348,
+    name: "Test1",
+    amount: 450,
+    date: "2026-10-12",
+    discount: 50,
+  },
+  {
+    id: 8,
+    clientId: 7348,
+    name: "Test1",
+    amount: 200,
+    date: "2026-10-20",
+    discount: 20,
+  },
+  {
+    id: 9,
+    clientId: 8451,
+    name: "Abc Traders",
+    amount: 800,
+    date: "2026-10-18",
+    discount: 100,
+  },
+  {
+    id: 10,
+    clientId: 8349,
+    name: "Rafay Here",
+    amount: 600,
+    date: "2026-09-28",
+    discount: 30,
+  },
+];
+
+// Users dropdown options (unique clients from the records above)
+export const discountUserOptions = [
+  { value: "all", label: "All" },
+  { value: "7350", label: "Test2" },
+  { value: "7348", label: "Test1" },
+  { value: "8451", label: "Abc Traders" },
+  { value: "8349", label: "Rafay Here" },
+];

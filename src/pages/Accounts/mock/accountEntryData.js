@@ -1,0 +1,57 @@
+export const accountEntryOperators = ["Admin", "Accounts User", "Manager"];
+
+export const accountEntryTaxTypes = [
+  { value: "None", label: "None" },
+  { value: "IBFT", label: "IBFT" },
+  { value: "GST", label: "GST" },
+  { value: "SST", label: "SST" },
+  { value: "GST + SST", label: "GST + SST" },
+];
+
+export const initialAccountEntries = [
+  {
+    id: 501,
+    headId: 2,
+    subHeadId: 103,
+    comments: "Delivery vehicle fuel",
+    date: "2026-10-18",
+    amount: 12500,
+    tax: 0,
+    taxType: "None",
+    transactionTypeId: 1,
+    transactionId: "",
+    description: "Fuel expense for daily deliveries",
+    addedBy: "Admin",
+    editedBy: "—",
+  },
+  {
+    id: 502,
+    headId: 1,
+    subHeadId: 101,
+    comments: "Counter collection deposit",
+    date: "2026-10-20",
+    amount: 18500,
+    tax: 0,
+    taxType: "None",
+    transactionTypeId: 1,
+    transactionId: "TX-2051",
+    description: "Cash received at counter",
+    addedBy: "Accounts User",
+    editedBy: "—",
+  },
+  {
+    id: 503,
+    headId: 3,
+    subHeadId: 104,
+    comments: "Monthly water sales",
+    date: "2026-10-21",
+    amount: 42000,
+    tax: 2000,
+    taxType: "GST",
+    transactionTypeId: 4,
+    transactionId: "TR-8402",
+    description: "Sales proceeds received through bank transfer",
+    addedBy: "Manager",
+    editedBy: "Accounts User",
+  },
+];

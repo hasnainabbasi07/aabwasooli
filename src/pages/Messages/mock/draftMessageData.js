@@ -1,0 +1,135 @@
+export const draftUserFilterOptions = [
+  { value: "all", label: "Select User" },
+  { value: "Admin", label: "Admin" },
+  { value: "Operator", label: "Operator" },
+  { value: "Client", label: "Client" },
+];
+
+export const draftTitleOptions = [
+  { value: "all", label: "All Titles" },
+  { value: "Payment Reminder", label: "Payment Reminder" },
+  { value: "Delivery Update", label: "Delivery Update" },
+  { value: "Welcome Message", label: "Welcome Message" },
+  { value: "Monthly Bill", label: "Monthly Bill" },
+  { value: "Security Deposit Reminder", label: "Security Deposit Reminder" },
+  { value: "Route Assignment", label: "Route Assignment" },
+  { value: "System Maintenance", label: "System Maintenance" },
+];
+
+export const draftDateOptions = [
+  { value: "all", label: "All Dates" },
+  { value: "2026-10-23", label: "23/Oct/2026 (Today)" },
+  { value: "2026-10-22", label: "22/Oct/2026" },
+  { value: "2026-10-21", label: "21/Oct/2026" },
+  { value: "2026-10-20", label: "20/Oct/2026" },
+];
+
+export const draftParameters = [
+  { value: "", label: "Select your Parameters" },
+  { value: "Name", label: "Name" },
+  { value: "Admin", label: "Admin" },
+  { value: "Date", label: "Date" },
+  { value: "Company Name", label: "Company Name" },
+  { value: "Amount", label: "Amount" },
+  { value: "Balance", label: "Balance" },
+  { value: "Account Type", label: "Account Type" },
+  { value: "Operator", label: "Operator" },
+];
+
+export const draftTemplates = [
+  { id: 1, title: "Payment Reminder", message: "Hello {{Name}}, your outstanding balance is {{Balance}}." },
+  { id: 2, title: "Delivery Update", message: "Dear {{Name}}, your delivery is scheduled for {{Date}}." },
+  { id: 3, title: "Welcome Message", message: "Welcome to {{Company Name}}, {{Name}}!" },
+];
+
+export const initialDraftMessages = [
+  {
+    id: 1,
+    name: "Ahmed Khan",
+    title: "Payment Reminder",
+    message: "Hello Ahmed Khan, your outstanding balance is Rs. 1,500. Kindly clear your dues by 25/Oct/2026.",
+    date: "2026-10-23",
+    phone: "0300-1234567",
+    areaId: "1",
+    area: "Hayatabad Phase 1",
+    userType: "Client",
+  },
+  {
+    id: 2,
+    name: "Bilal Ahmed",
+    title: "Delivery Update",
+    message: "Dear Bilal Ahmed, your delivery of 2 water bottles is scheduled for today between 2:00 PM and 4:00 PM.",
+    date: "2026-10-23",
+    phone: "0312-9876543",
+    areaId: "2",
+    area: "University Town",
+    userType: "Client",
+  },
+  {
+    id: 3,
+    name: "Tariq Mehmood",
+    title: "Welcome Message",
+    message: "Welcome to Wasooli Aab, Tariq Mehmood! Your new water subscription has been activated successfully.",
+    date: "2026-10-22",
+    phone: "0333-5551234",
+    areaId: "3",
+    area: "Saddar",
+    userType: "Client",
+  },
+  {
+    id: 4,
+    name: "Usman Ali",
+    title: "Monthly Bill",
+    message: "Dear Usman Ali, your monthly bill for October 2026 is Rs. 2,400. Please pay before the due date.",
+    date: "2026-10-22",
+    phone: "0345-4433221",
+    areaId: "4",
+    area: "Gulbahar",
+    userType: "Client",
+  },
+  {
+    id: 5,
+    name: "Kashif Rehman",
+    title: "Security Deposit Reminder",
+    message: "Hello Kashif Rehman, kindly submit the remaining bottle security deposit of Rs. 1,000.",
+    date: "2026-10-21",
+    phone: "0321-7788990",
+    areaId: "1",
+    area: "Hayatabad Phase 1",
+    userType: "Client",
+  },
+  {
+    id: 6,
+    name: "Zubair Shah",
+    title: "Delivery Update",
+    message: "Dear Zubair Shah, delivery team is on the way with your scheduled 3 water bottles.",
+    date: "2026-10-21",
+    phone: "0315-1122334",
+    areaId: "5",
+    area: "Ring Road",
+    userType: "Client",
+  },
+  {
+    id: 7,
+    name: "Farhan Saeed (Operator)",
+    title: "Route Assignment",
+    message: "Operator Alert: Delivery route for Sector D has been updated. Please inspect delivery manifest.",
+    date: "2026-10-20",
+    phone: "0301-8899001",
+    areaId: "2",
+    area: "University Town",
+    userType: "Operator",
+  },
+  {
+    id: 8,
+    name: "Admin Office",
+    title: "System Maintenance",
+    message: "System Notice: End of month accounts reconciliation will take place tonight at 11:00 PM.",
+    date: "2026-10-20",
+    phone: "0300-0001111",
+    areaId: "3",
+    area: "Saddar",
+    userType: "Admin",
+  },
+];
+

@@ -1,0 +1,65 @@
+export const deletedReportTypeOptions = [
+  { value: "0", label: "Select Report" },
+  { value: "deleted", label: "Delete" },
+  { value: "deleted-by", label: "Deleted By" },
+];
+
+// areaId / operatorId point to the Master mock data (areas, employees).
+// deletedDate = the date the report filters on, monthYear = month of the deleted collection.
+export const deletedRecords = [
+  {
+    id: 7348,
+    name: "Test1",
+    monthYear: "09/2026",
+    time: "10:42 AM",
+    address: "",
+    amount: 450,
+    areaId: 1,
+    operatorId: 1,
+    deletedDate: "2026-10-20",
+  },
+  {
+    id: 7350,
+    name: "Test2",
+    monthYear: "09/2026",
+    time: "11:15 AM",
+    address: "Gulshan E Mahmood",
+    amount: 300,
+    areaId: 1,
+    operatorId: 2,
+    deletedDate: "2026-10-18",
+  },
+  {
+    id: 7361,
+    name: "Test3",
+    monthYear: "08/2026",
+    time: "02:30 PM",
+    address: "Street 4, Hayatabad",
+    amount: 1200,
+    areaId: 2,
+    operatorId: 1,
+    deletedDate: "2026-10-10",
+  },
+  {
+    id: 8349,
+    name: "Rafay Here",
+    monthYear: "10/2026",
+    time: "09:05 AM",
+    address: "Faqirabad",
+    amount: 600,
+    areaId: 3,
+    operatorId: 3,
+    deletedDate: "2026-10-02",
+  },
+  {
+    id: 8451,
+    name: "Abc Traders",
+    monthYear: "09/2026",
+    time: "04:50 PM",
+    address: "Karachi",
+    amount: 800,
+    areaId: 1,
+    operatorId: 3,
+    deletedDate: "2026-09-27",
+  },
+];
